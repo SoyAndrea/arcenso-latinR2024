@@ -1,0 +1,18 @@
+---
+title: "`{arcenso}`: primeros pasos desarrollando un paquete en comunidad con rOpenSci"
+author: "Andrea Gomez Vargas & Emanuel Ciardullo"
+format:
+  revealjs: 
+    theme: custom.scss
+    self-contained: false
+    slide-number: c/t
+    logo: images/LatinR_hex_secundario.png
+    css: logo.css
+    footer: "[**soyandrea.github.io/arcenso**](https://soyandrea.github.io/arcenso/)"
+from: markdown+emoji
+---
+
+## ¡Hola 👋!
+
+
+
