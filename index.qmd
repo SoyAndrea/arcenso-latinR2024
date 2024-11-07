@@ -85,20 +85,6 @@ El objetivo del programa es apoyar a los desarrolladores de R de todo el mundo q
 
 :::
 
-## Champions and Mentors
-
-::: {.r-stack}
-
-
-
-
-![](images/posit3.jpg){.fragment top=200 left=0 width="40%"}
-
-![](images/posito2.jpg){.fragment top=50 right=50 width="80%"}
-
-![](images/posit1.jpg){.fragment bottom=0 right=50 width="90%"}
-
-:::
 
 ## ¿Cuál fue(es) mi proyecto? 
 
@@ -115,7 +101,7 @@ Además, la presentación de los datos no está homogeneizada entre periodos dif
 
 ## Propuesta
 
-De cuadros de excel a tablar en R
+De cuadros de excel a tablas ordenadas en R
 
 ::: columns
 ::: {.column width="70%"}
@@ -144,15 +130,36 @@ De cuadros de excel a tablar en R
 -  y mucho más...
 
 
+# Proceso de trabajo 
+
+## Mentorias y trainings
+
+::: {.r-stack}
+
+![](images/posit3.jpg){.fragment top=200 left=0 width="40%"}
+
+![](images/posito2.jpg){.fragment top=50 right=50 width="80%"}
+
+![](images/posit1.jpg){.fragment bottom=0 right=50 width="90%"}
+
+:::
+
+## Diseño conceptual 
+
+
 
 # {arcenso} 📦
 
 ##
 
+<br>
+<br>
 ![](images/arcenso.png){width="90%"}
 
 
 ## ¿Cómo funciona? 
+
+<br>
 
 ### Instalación
 

@@ -8,7 +8,7 @@
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.57">
+  <meta name="generator" content="quarto-1.4.553">
 
   <meta name="author" content="Andrea Gomez Vargas &amp; Emanuel Ciardullo">
   <title>{arcenso}: primeros pasos desarrollando un paquete en comunidad con rOpenSci</title>
@@ -42,7 +42,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -415,7 +415,8 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
 <p><img data-src="https://avatars.githubusercontent.com/u/64991969?v=4.png" style="border-radius: 80%;;width:50.0%"></p>
 <p><strong>Emanuel</strong></p>
 <p>Estadístico</p>
-</div></div>
+</div>
+</div>
 </section>
 <section>
 <section id="ropensci-champions-program" class="title-slide slide level1 center">
@@ -429,7 +430,8 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
 <p><br> <br> Es un programa de 12 meses de duración que incluye formación basada en cohortes, desarrollo de proyectos y mentorias 1:1</p>
 </div><div class="column" style="width:50%;">
 <p><br> <br> <img data-src="images/ropensci.png"></p>
-</div></div>
+</div>
+</div>
 </section>
 <section id="cohorte-2023-2024" class="slide level2">
 <h2>cohorte 2023-2024</h2>
@@ -438,14 +440,7 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
 <p><img data-src="images/champios2024.png" style="width:100.0%"></p>
 </div><div class="column" style="width:50%;">
 <p>El objetivo del programa es apoyar a los desarrolladores de R de todo el mundo que se identifican como miembros de grupos sistemáticamente excluidos de la comunidad del software abierto.</p>
-</div></div>
-</section>
-<section id="champions-and-mentors" class="slide level2">
-<h2>Champions and Mentors</h2>
-<div class="r-stack">
-<p><img data-src="images/posit3.jpg" class="fragment" style="width:40.0%" data-top="200" data-left="0"></p>
-<p><img data-src="images/posito2.jpg" class="fragment" style="width:80.0%" data-top="50" data-right="50"></p>
-<p><img data-src="images/posit1.jpg" class="fragment" style="width:90.0%" data-bottom="0" data-right="50"></p>
+</div>
 </div>
 </section>
 <section id="cuál-fuees-mi-proyecto" class="slide level2">
@@ -460,13 +455,14 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
 </section>
 <section id="propuesta" class="slide level2">
 <h2>Propuesta</h2>
-<p>De cuadros de excel a tablar en R</p>
+<p>De cuadros de excel a tablas ordenadas en R</p>
 <div class="columns">
 <div class="column" style="width:70%;">
 <p><img data-src="images/excel.png" style="width:110.0%"></p>
 </div><div class="column" style="width:30%;">
 <p><img data-src="images/tabla.png" style="width:100.0%"></p>
-</div></div>
+</div>
+</div>
 </section>
 <section id="porque-son-importante-los-datos-censales" class="slide level2">
 <h2>¿Porque son importante los datos censales?</h2>
@@ -479,16 +475,33 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
 </ul>
 </section></section>
 <section>
+<section id="proceso-de-trabajo" class="title-slide slide level1 center">
+<h1>Proceso de trabajo</h1>
+
+</section>
+<section id="mentorias-y-trainings" class="slide level2">
+<h2>Mentorias y trainings</h2>
+<div class="r-stack">
+<p><img data-src="images/posit3.jpg" class="fragment" style="width:40.0%" data-top="200" data-left="0"></p>
+<p><img data-src="images/posito2.jpg" class="fragment" style="width:80.0%" data-top="50" data-right="50"></p>
+<p><img data-src="images/posit1.jpg" class="fragment" style="width:90.0%" data-bottom="0" data-right="50"></p>
+</div>
+</section>
+<section id="diseño-conceptual" class="slide level2">
+<h2>Diseño conceptual</h2>
+</section></section>
+<section>
 <section id="arcenso" class="title-slide slide level1 center">
 <h1>{arcenso} 📦</h1>
 
 </section>
 <section id="section-1" class="slide level2">
 <h2></h2>
-
-<img data-src="images/arcenso.png" style="width:90.0%" class="r-stretch"></section>
+<p><br> <br> <img data-src="images/arcenso.png" style="width:90.0%"></p>
+</section>
 <section id="cómo-funciona" class="slide level2">
 <h2>¿Cómo funciona?</h2>
+<p><br></p>
 <h3 id="instalación">Instalación</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="co"># install.packages("remotes")</span></span>
@@ -1044,7 +1057,18 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
         }
         return false;
       }
-      const onCopySuccess = function(e) {
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1076,29 +1100,7 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
         }, 1000);
         // clear code selection
         e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
       });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -1106,7 +1108,7 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {
