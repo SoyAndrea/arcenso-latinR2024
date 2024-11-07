@@ -9,10 +9,192 @@ format:
     logo: images/LatinR_hex_secundario.png
     css: logo.css
     footer: "[**soyandrea.github.io/arcenso**](https://soyandrea.github.io/arcenso/)"
+knitr:
+  opts_chunk: 
+    echo: true
+    collapse: true
+    comment: "#>"
+    fig.path: "figures/"
 from: markdown+emoji
 ---
 
 ## ¡Hola 👋!
 
+::: columns
+::: {.column width="50%"}
 
+![](https://avatars.githubusercontent.com/u/45582182?v=4){width="50%" style="border-radius: 80%;"}
+
+**Andrea**
+
+rOpenSci Champion
+
+
+Socióloga
+
+:::
+
+::: {.column width="50%"}
+
+![](https://avatars.githubusercontent.com/u/64991969?v=4){width="50%" style="border-radius: 80%;"}
+
+**Emanuel**
+
+Estadístico
+
+:::
+
+:::
+
+
+
+#  rOpenSci Champions Program :star::star::star:
+
+## 
+
+::: columns
+::: {.column width="50%"}
+
+<br>
+<br>
+Es un programa de 12 meses de duración que incluye formación basada en cohortes, desarrollo de proyectos y mentorias 1:1
+:::
+
+::: {.column width="50%"}
+<br>
+<br>
+![](images/ropensci.png)
+:::
+
+:::
+
+
+
+## cohorte 2023-2024 
+::: columns
+::: {.column width="50%"}
+
+![](images/champios2024.png){width="100%"}
+:::
+
+::: {.column width="50%"}
+
+El objetivo del programa es apoyar a los desarrolladores de R de todo el mundo que se identifican como miembros de grupos sistemáticamente excluidos de la comunidad del software abierto. 
+
+:::
+
+:::
+
+## Champions and Mentors
+
+::: {.r-stack}
+
+
+
+
+![](images/posit3.jpg){.fragment top=200 left=0 width="40%"}
+
+![](images/posito2.jpg){.fragment top=50 right=50 width="80%"}
+
+![](images/posit1.jpg){.fragment bottom=0 right=50 width="90%"}
+
+:::
+
+## ¿Cuál fue(es) mi proyecto? 
+
+
+Generar un paquete que permita disponer de los datos oficiales de los censos nacionales de población en Argentina provenientes del INDEC desde 1970 hasta 2022, homogeneizados y listos para usar. 
+
+Contar con un paquete de información censal permitirá al sector público y privado, a los ciudadanos y a otros actores de la sociedad acceder a información actual e histórica sobre la población, los hogares y las viviendas de Argentina de una manera más accesible.
+
+## ¿Por qué?
+
+Actualmente los resultados históricos censales de **1970, 1980, 1991, 2001, 2010 y 2022** están disponibles en distintos formatos a través de libros físicos, PDFs, archivos en formato excel o en REDATAM, sin contar con un sistema o formato unificado que permita trabajar con los datos de estos seis periodos censales como base de datos.
+
+Además, la presentación de los datos no está homogeneizada entre periodos dificultando la comparación histórica o en serie de la información disponible.
+
+## Propuesta
+
+De cuadros de excel a tablar en R
+
+::: columns
+::: {.column width="70%"}
+![](images/excel.png){width="110%"}
+
+:::
+
+::: {.column width="30%"}
+![](images/tabla.png){width="100%"}
+
+:::
+
+:::
+
+
+## ¿Porque son importante los datos censales? 
+
+- Es una herramienta clave para entender las caracteristicas y necesidades de la población.
+
+- Proporcionan datos esenciales para la planificación y el desarrollo de las políticas públicas.
+
+- Planificación social y económica
+
+- Investigación académica y estudios sociales
+
+-  y mucho más...
+
+
+
+# {arcenso} 📦
+
+##
+
+![](images/arcenso.png){width="90%"}
+
+
+## ¿Cómo funciona? 
+
+### Instalación
+
+```{r  eval=FALSE}
+# install.packages("remotes")
+remotes::install_github("SoyAndrea/arcenso")
+```
+
+<br>
+<br>
+
+### Activación del paquete
+
+```{r}
+library(arcenso)
+```
+
+
+## `get_census()`
+
+```{r}
+get_census( year = 1970, topic = "FECUNDIDAD", geolvl = "Total del país")
+```
+
+
+## `check_repository()`
+
+```{r}
+check_repository( year = 1970, topic = "FECUNDIDAD", geolvl = "Total del país")
+```
+
+
+## `arcenso()` 
+
+```{r eval=FALSE}
+arcenso()
+```
+
+
+![](images/shiny.png){width="90%"}
+
+
+
+# Próximos pasos
 
