@@ -18,68 +18,57 @@ knitr:
 from: markdown+emoji
 ---
 
-## ¡Hola 👋!
+## `arcenso`
 
 ::: columns
-::: {.column width="50%"}
-
-![](https://avatars.githubusercontent.com/u/45582182?v=4){width="50%" style="border-radius: 80%;"}
-
-**Andrea**
-
-rOpenSci Champion
-
-
-Socióloga
+::: {.column width="30%"}
+![](images/arcenso1.png)
 
 :::
 
-::: {.column width="50%"}
-
-![](https://avatars.githubusercontent.com/u/64991969?v=4){width="50%" style="border-radius: 80%;"}
-
-**Emanuel**
-
-Estadístico
-
+::: {.column width="70%"}
+**Es un proyecto apoyado por el programa de Campeones y Campeonas de rOpenSci cohorte 2023-2024, con Andrea Gómez Vargas como desarrolladora principal, Emanuel Ciardullo como co-desarrollador y Luis D. Verde Arregoitia como mentor.**
 :::
 
 :::
-
-
 
 #  rOpenSci Champions Program :star::star::star:
 
-## 
+## Objetivo
 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="70%"}
 
 <br>
-<br>
-Es un programa de 12 meses de duración que incluye formación basada en cohortes, desarrollo de proyectos y mentorias 1:1
+
+El programa se diseña para identificar, reconocer y premiar a miembros apasionados de las comunidades.^[[¡Anunciamos el programa de Campeones y Campeonas de rOpenSci!](https://ropensci.org/es/blog/2022/09/22/launch-champions-program-es/)]
+
+Con una duración de 12 meses que incluye formación basada en cohortes, desarrollo de un proyecto y mentorias 1:1. 
 :::
 
-::: {.column width="50%"}
+::: {.column width="30%"}
 <br>
 <br>
-![](images/ropensci.png)
+![logo rOpenSci](images/ropensci.png)
 :::
 
 :::
 
 
 
-## cohorte 2023-2024 
+## Enfoque - cohorte 2023-2024 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="40%"}
 
-![](images/champios2024.png){width="100%"}
+![grupo de cohorte ropensci champios](images/champios2024.png){width="100%"}
 :::
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 
-El objetivo del programa es apoyar a los desarrolladores de R de todo el mundo que se identifican como miembros de grupos sistemáticamente excluidos de la comunidad del software abierto. 
+::: r-fit-text
+El programa está enfocado y pensando para que participen personas que pertenecen a grupos histórica y sistemáticamente excluidos de las comunidades de software abierto y de software de investigación y que están interesadas en contribuir a rOpenSci y al ecosistema más amplio de comunidades de software de código abierto y de investigación.
+:::
+
 
 :::
 
@@ -89,7 +78,7 @@ El objetivo del programa es apoyar a los desarrolladores de R de todo el mundo q
 ## ¿Cuál fue(es) mi proyecto? 
 
 
-Generar un paquete que permita disponer de los datos oficiales de los censos nacionales de población en Argentina provenientes del INDEC desde 1970 hasta 2022, homogeneizados y listos para usar. 
+Generar un paquete que permita disponer de los datos oficiales de los censos nacionales de población en Argentina provenientes del INDEC desde 1970 hasta 2022, homogeneizados, ordenados y listos para usar. 
 
 Contar con un paquete de información censal permitirá al sector público y privado, a los ciudadanos y a otros actores de la sociedad acceder a información actual e histórica sobre la población, los hogares y las viviendas de Argentina de una manera más accesible.
 
@@ -132,19 +121,22 @@ De cuadros de excel a tablas ordenadas en R
 
 # Proceso de trabajo 
 
-## Mentorias y trainings
+## Trainings
+
+## Mentorias 
 
 ::: {.r-stack}
 
-![](images/posit3.jpg){.fragment top=200 left=0 width="40%"}
+![](images/posit3.jpg){.fragment top=200 left=0 width="30%"}
 
-![](images/posito2.jpg){.fragment top=50 right=50 width="80%"}
+![](images/posito2.jpg){.fragment top=50 right=50 width="40%"}
 
-![](images/posit1.jpg){.fragment bottom=0 right=50 width="90%"}
+![](images/posit1.jpg){.fragment bottom=0 right=50 width="40%"}
 
 :::
 
 ## Diseño conceptual 
+
 
 
 
@@ -204,4 +196,33 @@ arcenso()
 
 
 # Próximos pasos
+
+
+## ¡Hola 👋!
+
+::: columns
+::: {.column width="50%"}
+
+![](https://avatars.githubusercontent.com/u/45582182?v=4){width="50%" style="border-radius: 80%;"}
+
+**Andrea**
+
+rOpenSci Champion
+
+
+Socióloga
+
+:::
+
+::: {.column width="50%"}
+
+![](https://avatars.githubusercontent.com/u/64991969?v=4){width="50%" style="border-radius: 80%;"}
+
+**Emanuel**
+
+Estadístico
+
+:::
+
+:::
 
