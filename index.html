@@ -7,8 +7,8 @@
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.553">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Andrea Gomez Vargas &amp; Emanuel Ciardullo">
   <title>{arcenso}: primeros pasos desarrollando un paquete en comunidad con rOpenSci</title>
@@ -42,7 +42,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -56,44 +56,44 @@
         -khtml-user-select: none; -moz-user-select: none;
         -ms-user-select: none; user-select: none;
         padding: 0 4px; width: 4em;
+        color: #aaaaaa;
       }
-    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
     div.sourceCode
-      { color: #f8f8f2;  }
+      { color: #003b4f; background-color: #f1f3f5; }
     @media screen {
     pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
     }
-    code span { color: #f8f8f2; } /* Normal */
-    code span.al { color: #f07178; background-color: #2a0f15; font-weight: bold; } /* Alert */
-    code span.an { color: #d4d0ab; } /* Annotation */
-    code span.at { color: #00e0e0; } /* Attribute */
-    code span.bn { color: #d4d0ab; } /* BaseN */
-    code span.bu { color: #abe338; } /* BuiltIn */
-    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #abe338; } /* Char */
-    code span.cn { color: #ffd700; } /* Constant */
-    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
-    code span.cv { color: #ffd700; } /* CommentVar */
-    code span.do { color: #f8f8f2; } /* Documentation */
-    code span.dt { color: #ffa07a; } /* DataType */
-    code span.dv { color: #d4d0ab; } /* DecVal */
-    code span.er { color: #f07178; text-decoration: underline; } /* Error */
-    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
-    code span.fl { color: #d4d0ab; } /* Float */
-    code span.fu { color: #ffa07a; } /* Function */
-    code span.im { color: #abe338; } /* Import */
-    code span.in { color: #d4d0ab; } /* Information */
-    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
-    code span.op { color: #ffa07a; } /* Operator */
-    code span.ot { color: #00e0e0; } /* Other */
-    code span.pp { color: #dcc6e0; } /* Preprocessor */
-    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
-    code span.sc { color: #abe338; } /* SpecialChar */
-    code span.ss { color: #abe338; } /* SpecialString */
-    code span.st { color: #abe338; } /* String */
-    code span.va { color: #00e0e0; } /* Variable */
-    code span.vs { color: #abe338; } /* VerbatimString */
-    code span.wa { color: #dcc6e0; } /* Warning */
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="logo.css">
@@ -387,7 +387,7 @@
     }
   </style>
 </head>
-<body class="quarto-dark">
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
@@ -407,12 +407,16 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
 <h2><code>arcenso</code></h2>
 <div class="columns">
 <div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
 <p><img data-src="images/arcenso1.png"></p>
+<figcaption>hex arcenso</figcaption>
+</figure>
+</div>
 </div><div class="column" style="width:70%;">
-<p><strong>Es un proyecto apoyado por el programa de Campeones y Campeonas de rOpenSci cohorte 2023-2024, con Andrea Gómez Vargas como desarrolladora principal, Emanuel Ciardullo como co-desarrollador y Luis D. Verde Arregoitia como mentor.</strong></p>
-</div>
-</div>
-</section>
+<p>Es un proyecto apoyado por el programa de Campeones y Campeonas de rOpenSci cohorte 2023-2024<sup>1</sup>, con Andrea Gómez Vargas como desarrolladora principal, Emanuel Ciardullo como co-desarrollador y Luis D. Verde Arregoitia como mentor.</p>
+</div></div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://ropensci.org/blog/2024/02/15/champions-program-champions-2024/">Introducing rOpenSci Champions - Cohort 2023-2024</a></p></li></ol></aside></section>
 <section>
 <section id="ropensci-champions-program" class="title-slide slide level1 center">
 <h1>rOpenSci Champions Program <span class="emoji" data-emoji="star">⭐</span><span class="emoji" data-emoji="star">⭐</span><span class="emoji" data-emoji="star">⭐</span></h1>
@@ -427,68 +431,101 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
 <p>Con una duración de 12 meses que incluye formación basada en cohortes, desarrollo de un proyecto y mentorias 1:1.</p>
 </div><div class="column" style="width:30%;">
 <p><br> <br> <img data-src="images/ropensci.png" alt="logo rOpenSci"></p>
-</div>
-</div>
-<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://ropensci.org/es/blog/2022/09/22/launch-champions-program-es/">¡Anunciamos el programa de Campeones y Campeonas de rOpenSci!</a></p></li></ol></aside></section>
+</div></div>
+<aside><ol class="aside-footnotes"><li id="fn2"><p><a href="https://ropensci.org/es/blog/2022/09/22/launch-champions-program-es/">¡Anunciamos el programa de Campeones y Campeonas de rOpenSci!</a></p></li></ol></aside></section>
 <section id="enfoque---cohorte-2023-2024" class="slide level2">
 <h2>Enfoque - cohorte 2023-2024</h2>
 <div class="columns">
-<div class="column" style="width:40%;">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/champios2024.png" style="width:100.0%"></p>
-<figcaption>grupo de cohorte ropensci champios</figcaption>
+<figcaption>cohorte ropensci champios</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:60%;">
+</div><div class="column" style="width:50%;">
 <div class="r-fit-text">
+<p><br> <br></p>
 <p>El programa está enfocado y pensando para que participen personas que pertenecen a grupos histórica y sistemáticamente excluidos de las comunidades de software abierto y de software de investigación y que están interesadas en contribuir a rOpenSci y al ecosistema más amplio de comunidades de software de código abierto y de investigación.</p>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="cuál-fuees-mi-proyecto" class="slide level2">
 <h2>¿Cuál fue(es) mi proyecto?</h2>
-<p>Generar un paquete que permita disponer de los datos oficiales de los censos nacionales de población en Argentina provenientes del INDEC desde 1970 hasta 2022, homogeneizados, ordenados y listos para usar.</p>
-<p>Contar con un paquete de información censal permitirá al sector público y privado, a los ciudadanos y a otros actores de la sociedad acceder a información actual e histórica sobre la población, los hogares y las viviendas de Argentina de una manera más accesible.</p>
+<p><br></p>
+<p><strong>Generar un paquete que permita disponer de los datos oficiales de los censos nacionales de población en Argentina</strong> provenientes del INDEC desde 1970 hasta 2022, homogeneizados, ordenados y listos para usar.</p>
 </section>
 <section id="por-qué" class="slide level2">
 <h2>¿Por qué?</h2>
+<p><br></p>
 <p>Actualmente los resultados históricos censales de <strong>1970, 1980, 1991, 2001, 2010 y 2022</strong> están disponibles en distintos formatos a través de libros físicos, PDFs, archivos en formato excel o en REDATAM, sin contar con un sistema o formato unificado que permita trabajar con los datos de estos seis periodos censales como base de datos.</p>
-<p>Además, la presentación de los datos no está homogeneizada entre periodos dificultando la comparación histórica o en serie de la información disponible.</p>
 </section>
 <section id="propuesta" class="slide level2">
 <h2>Propuesta</h2>
-<p>De cuadros de excel a tablas ordenadas en R</p>
+<blockquote>
+<p>De cuadros de excel a <strong>tablas ordenadas</strong> en R</p>
+</blockquote>
 <div class="columns">
 <div class="column" style="width:70%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
 <p><img data-src="images/excel.png" style="width:110.0%"></p>
+<figcaption>cuadro de excel descargado</figcaption>
+</figure>
+</div>
 </div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
 <p><img data-src="images/tabla.png" style="width:100.0%"></p>
+<figcaption>tabla ordenada en R</figcaption>
+</figure>
 </div>
-</div>
+</div></div>
 </section>
 <section id="porque-son-importante-los-datos-censales" class="slide level2">
 <h2>¿Porque son importante los datos censales?</h2>
+<div>
 <ul>
-<li><p>Es una herramienta clave para entender las caracteristicas y necesidades de la población.</p></li>
-<li><p>Proporcionan datos esenciales para la planificación y el desarrollo de las políticas públicas.</p></li>
-<li><p>Planificación social y económica</p></li>
-<li><p>Investigación académica y estudios sociales</p></li>
-<li><p>y mucho más…</p></li>
+<li class="fragment"><p>Es una herramienta clave para entender las caracteristicas y necesidades de la población.</p></li>
+<li class="fragment"><p>Proporcionan datos esenciales para la planificación y el desarrollo de las políticas públicas.</p></li>
+<li class="fragment"><p>Planificación social y económica</p></li>
+<li class="fragment"><p>Investigación académica y estudios sociales</p></li>
+<li class="fragment"><p>Investigaciones de mercado y mucho más…</p></li>
 </ul>
+</div>
 </section></section>
 <section>
 <section id="proceso-de-trabajo" class="title-slide slide level1 center">
 <h1>Proceso de trabajo</h1>
 
 </section>
-<section id="mentorias-y-trainings" class="slide level2">
-<h2>Mentorias y trainings</h2>
+<section id="pregunta---problema" class="slide level2">
+<h2>pregunta - problema</h2>
+<p>¿Cómo empezar?</p>
 <div class="r-stack">
-<p><img data-src="images/posit3.jpg" class="fragment" style="width:40.0%" data-top="200" data-left="0"></p>
-<p><img data-src="images/posito2.jpg" class="fragment" style="width:80.0%" data-top="50" data-right="50"></p>
-<p><img data-src="images/posit1.jpg" class="fragment" style="width:90.0%" data-bottom="0" data-right="50"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/censos.png" class="fragment" style="width:90.0%" data-top="200" data-left="0"></p>
+<figcaption>logos censales de argentina</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/meme.png" class="fragment" data-top="200" data-left="0"></p>
+<figcaption>meme</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="trainings" class="slide level2">
+<h2>Trainings</h2>
+</section>
+<section id="mentorias-encuentros" class="slide level2">
+<h2>Mentorias &amp; encuentros</h2>
+<div class="r-stack">
+<p><img data-src="images/posit3.jpg" class="fragment" style="width:30.0%" data-top="200" data-left="0"></p>
+<p><img data-src="images/posito2.jpg" class="fragment" style="width:40.0%" data-top="50" data-right="50"></p>
+<p><img data-src="images/posit1.jpg" class="fragment" style="width:40.0%" data-bottom="0" data-right="50"></p>
 </div>
 </section>
 <section id="diseño-conceptual" class="slide level2">
@@ -501,7 +538,7 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
-<p><br> <br> <img data-src="images/arcenso.png" style="width:90.0%"></p>
+<p><br> <br> <br> <img data-src="images/arcenso.png" style="width:150.0%"></p>
 </section>
 <section id="cómo-funciona" class="slide level2">
 <h2>¿Cómo funciona?</h2>
@@ -517,230 +554,130 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a><span class="fu">library</span>(arcenso)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="get_census" class="slide level2">
-<h2><code>get_census()</code></h2>
+<section id="get_census---obtener-tablas" class="slide level2">
+<h2><code>get_census()</code> - obtener tablas</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="fu">get_census</span>( <span class="at">year =</span> <span class="dv">1970</span>, <span class="at">topic =</span> <span class="st">"FECUNDIDAD"</span>, <span class="at">geolvl =</span> <span class="st">"Total del país"</span>)</span>
-<span id="cb3-2"><a href=""></a><span class="co">#&gt; $c70_total_del_pais_poblacion_c17</span></span>
-<span id="cb3-3"><a href=""></a><span class="co">#&gt;           grupo_edad hijos_nacidos_vivos mujeres</span></span>
-<span id="cb3-4"><a href=""></a><span class="co">#&gt; 1   Menos de 15 años               Total  647350</span></span>
-<span id="cb3-5"><a href=""></a><span class="co">#&gt; 2   Menos de 15 años                   0  643550</span></span>
-<span id="cb3-6"><a href=""></a><span class="co">#&gt; 3   Menos de 15 años                   1    2300</span></span>
-<span id="cb3-7"><a href=""></a><span class="co">#&gt; 4   Menos de 15 años                   2    1400</span></span>
-<span id="cb3-8"><a href=""></a><span class="co">#&gt; 5   Menos de 15 años                   3     100</span></span>
-<span id="cb3-9"><a href=""></a><span class="co">#&gt; 6   Menos de 15 años                   4       0</span></span>
-<span id="cb3-10"><a href=""></a><span class="co">#&gt; 7   Menos de 15 años                   5       0</span></span>
-<span id="cb3-11"><a href=""></a><span class="co">#&gt; 8   Menos de 15 años                   6       0</span></span>
-<span id="cb3-12"><a href=""></a><span class="co">#&gt; 9   Menos de 15 años                   7       0</span></span>
-<span id="cb3-13"><a href=""></a><span class="co">#&gt; 10  Menos de 15 años                   8       0</span></span>
-<span id="cb3-14"><a href=""></a><span class="co">#&gt; 11  Menos de 15 años                   9       0</span></span>
-<span id="cb3-15"><a href=""></a><span class="co">#&gt; 12  Menos de 15 años            10 y más       0</span></span>
-<span id="cb3-16"><a href=""></a><span class="co">#&gt; 13             15-19               Total 1039850</span></span>
-<span id="cb3-17"><a href=""></a><span class="co">#&gt; 14             15-19                   0  926750</span></span>
-<span id="cb3-18"><a href=""></a><span class="co">#&gt; 15             15-19                   1   80050</span></span>
-<span id="cb3-19"><a href=""></a><span class="co">#&gt; 16             15-19                   2   23750</span></span>
-<span id="cb3-20"><a href=""></a><span class="co">#&gt; 17             15-19                   3    7200</span></span>
-<span id="cb3-21"><a href=""></a><span class="co">#&gt; 18             15-19                   4    1550</span></span>
-<span id="cb3-22"><a href=""></a><span class="co">#&gt; 19             15-19                   5     350</span></span>
-<span id="cb3-23"><a href=""></a><span class="co">#&gt; 20             15-19                   6     100</span></span>
-<span id="cb3-24"><a href=""></a><span class="co">#&gt; 21             15-19                   7      50</span></span>
-<span id="cb3-25"><a href=""></a><span class="co">#&gt; 22             15-19                   8      50</span></span>
-<span id="cb3-26"><a href=""></a><span class="co">#&gt; 23             15-19                   9       0</span></span>
-<span id="cb3-27"><a href=""></a><span class="co">#&gt; 24             15-19            10 y más       0</span></span>
-<span id="cb3-28"><a href=""></a><span class="co">#&gt; 25             20-24               Total  980550</span></span>
-<span id="cb3-29"><a href=""></a><span class="co">#&gt; 26             20-24                   0  592300</span></span>
-<span id="cb3-30"><a href=""></a><span class="co">#&gt; 27             20-24                   1  194900</span></span>
-<span id="cb3-31"><a href=""></a><span class="co">#&gt; 28             20-24                   2  112050</span></span>
-<span id="cb3-32"><a href=""></a><span class="co">#&gt; 29             20-24                   3   51250</span></span>
-<span id="cb3-33"><a href=""></a><span class="co">#&gt; 30             20-24                   4   19550</span></span>
-<span id="cb3-34"><a href=""></a><span class="co">#&gt; 31             20-24                   5    6500</span></span>
-<span id="cb3-35"><a href=""></a><span class="co">#&gt; 32             20-24                   6    2650</span></span>
-<span id="cb3-36"><a href=""></a><span class="co">#&gt; 33             20-24                   7     850</span></span>
-<span id="cb3-37"><a href=""></a><span class="co">#&gt; 34             20-24                   8     200</span></span>
-<span id="cb3-38"><a href=""></a><span class="co">#&gt; 35             20-24                   9     100</span></span>
-<span id="cb3-39"><a href=""></a><span class="co">#&gt; 36             20-24            10 y más     200</span></span>
-<span id="cb3-40"><a href=""></a><span class="co">#&gt; 37             25-29               Total  860150</span></span>
-<span id="cb3-41"><a href=""></a><span class="co">#&gt; 38             25-29                   0  271300</span></span>
-<span id="cb3-42"><a href=""></a><span class="co">#&gt; 39             25-29                   1  198300</span></span>
-<span id="cb3-43"><a href=""></a><span class="co">#&gt; 40             25-29                   2  198200</span></span>
-<span id="cb3-44"><a href=""></a><span class="co">#&gt; 41             25-29                   3   96000</span></span>
-<span id="cb3-45"><a href=""></a><span class="co">#&gt; 42             25-29                   4   49700</span></span>
-<span id="cb3-46"><a href=""></a><span class="co">#&gt; 43             25-29                   5   24900</span></span>
-<span id="cb3-47"><a href=""></a><span class="co">#&gt; 44             25-29                   6   12350</span></span>
-<span id="cb3-48"><a href=""></a><span class="co">#&gt; 45             25-29                   7    5600</span></span>
-<span id="cb3-49"><a href=""></a><span class="co">#&gt; 46             25-29                   8    2300</span></span>
-<span id="cb3-50"><a href=""></a><span class="co">#&gt; 47             25-29                   9    1000</span></span>
-<span id="cb3-51"><a href=""></a><span class="co">#&gt; 48             25-29            10 y más     500</span></span>
-<span id="cb3-52"><a href=""></a><span class="co">#&gt; 49             30-34               Total  795650</span></span>
-<span id="cb3-53"><a href=""></a><span class="co">#&gt; 50             30-34                   0  140350</span></span>
-<span id="cb3-54"><a href=""></a><span class="co">#&gt; 51             30-34                   1  141600</span></span>
-<span id="cb3-55"><a href=""></a><span class="co">#&gt; 52             30-34                   2  231100</span></span>
-<span id="cb3-56"><a href=""></a><span class="co">#&gt; 53             30-34                   3  127150</span></span>
-<span id="cb3-57"><a href=""></a><span class="co">#&gt; 54             30-34                   4   62750</span></span>
-<span id="cb3-58"><a href=""></a><span class="co">#&gt; 55             30-34                   5   34450</span></span>
-<span id="cb3-59"><a href=""></a><span class="co">#&gt; 56             30-34                   6   23600</span></span>
-<span id="cb3-60"><a href=""></a><span class="co">#&gt; 57             30-34                   7   15950</span></span>
-<span id="cb3-61"><a href=""></a><span class="co">#&gt; 58             30-34                   8    8650</span></span>
-<span id="cb3-62"><a href=""></a><span class="co">#&gt; 59             30-34                   9    4400</span></span>
-<span id="cb3-63"><a href=""></a><span class="co">#&gt; 60             30-34            10 y más    5650</span></span>
-<span id="cb3-64"><a href=""></a><span class="co">#&gt; 61             35-39               Total  767400</span></span>
-<span id="cb3-65"><a href=""></a><span class="co">#&gt; 62             35-39                   0  105750</span></span>
-<span id="cb3-66"><a href=""></a><span class="co">#&gt; 63             35-39                   1  121250</span></span>
-<span id="cb3-67"><a href=""></a><span class="co">#&gt; 64             35-39                   2  225050</span></span>
-<span id="cb3-68"><a href=""></a><span class="co">#&gt; 65             35-39                   3  125450</span></span>
-<span id="cb3-69"><a href=""></a><span class="co">#&gt; 66             35-39                   4   65650</span></span>
-<span id="cb3-70"><a href=""></a><span class="co">#&gt; 67             35-39                   5   40400</span></span>
-<span id="cb3-71"><a href=""></a><span class="co">#&gt; 68             35-39                   6   29050</span></span>
-<span id="cb3-72"><a href=""></a><span class="co">#&gt; 69             35-39                   7   20100</span></span>
-<span id="cb3-73"><a href=""></a><span class="co">#&gt; 70             35-39                   8   13150</span></span>
-<span id="cb3-74"><a href=""></a><span class="co">#&gt; 71             35-39                   9    8700</span></span>
-<span id="cb3-75"><a href=""></a><span class="co">#&gt; 72             35-39            10 y más   12850</span></span>
-<span id="cb3-76"><a href=""></a><span class="co">#&gt; 73             40-44               Total  769600</span></span>
-<span id="cb3-77"><a href=""></a><span class="co">#&gt; 74             40-44                   0   98200</span></span>
-<span id="cb3-78"><a href=""></a><span class="co">#&gt; 75             40-44                   1  125250</span></span>
-<span id="cb3-79"><a href=""></a><span class="co">#&gt; 76             40-44                   2  216650</span></span>
-<span id="cb3-80"><a href=""></a><span class="co">#&gt; 77             40-44                   3  129350</span></span>
-<span id="cb3-81"><a href=""></a><span class="co">#&gt; 78             40-44                   4   62500</span></span>
-<span id="cb3-82"><a href=""></a><span class="co">#&gt; 79             40-44                   5   37900</span></span>
-<span id="cb3-83"><a href=""></a><span class="co">#&gt; 80             40-44                   6   27850</span></span>
-<span id="cb3-84"><a href=""></a><span class="co">#&gt; 81             40-44                   7   18500</span></span>
-<span id="cb3-85"><a href=""></a><span class="co">#&gt; 82             40-44                   8   14150</span></span>
-<span id="cb3-86"><a href=""></a><span class="co">#&gt; 83             40-44                   9   13100</span></span>
-<span id="cb3-87"><a href=""></a><span class="co">#&gt; 84             40-44            10 y más   26150</span></span>
-<span id="cb3-88"><a href=""></a><span class="co">#&gt; 85             45-49               Total  698950</span></span>
-<span id="cb3-89"><a href=""></a><span class="co">#&gt; 86             45-49                   0   96550</span></span>
-<span id="cb3-90"><a href=""></a><span class="co">#&gt; 87             45-49                   1  121350</span></span>
-<span id="cb3-91"><a href=""></a><span class="co">#&gt; 88             45-49                   2  189700</span></span>
-<span id="cb3-92"><a href=""></a><span class="co">#&gt; 89             45-49                   3  107700</span></span>
-<span id="cb3-93"><a href=""></a><span class="co">#&gt; 90             45-49                   4   58100</span></span>
-<span id="cb3-94"><a href=""></a><span class="co">#&gt; 91             45-49                   5   30800</span></span>
-<span id="cb3-95"><a href=""></a><span class="co">#&gt; 92             45-49                   6   23900</span></span>
-<span id="cb3-96"><a href=""></a><span class="co">#&gt; 93             45-49                   7   18600</span></span>
-<span id="cb3-97"><a href=""></a><span class="co">#&gt; 94             45-49                   8   14250</span></span>
-<span id="cb3-98"><a href=""></a><span class="co">#&gt; 95             45-49                   9    9950</span></span>
-<span id="cb3-99"><a href=""></a><span class="co">#&gt; 96             45-49            10 y más   28050</span></span>
-<span id="cb3-100"><a href=""></a><span class="co">#&gt; 97             50-54               Total  584800</span></span>
-<span id="cb3-101"><a href=""></a><span class="co">#&gt; 98             50-54                   0   90200</span></span>
-<span id="cb3-102"><a href=""></a><span class="co">#&gt; 99             50-54                   1  101050</span></span>
-<span id="cb3-103"><a href=""></a><span class="co">#&gt; 100            50-54                   2  147900</span></span>
-<span id="cb3-104"><a href=""></a><span class="co">#&gt; 101            50-54                   3   89450</span></span>
-<span id="cb3-105"><a href=""></a><span class="co">#&gt; 102            50-54                   4   45850</span></span>
-<span id="cb3-106"><a href=""></a><span class="co">#&gt; 103            50-54                   5   29900</span></span>
-<span id="cb3-107"><a href=""></a><span class="co">#&gt; 104            50-54                   6   19900</span></span>
-<span id="cb3-108"><a href=""></a><span class="co">#&gt; 105            50-54                   7   14300</span></span>
-<span id="cb3-109"><a href=""></a><span class="co">#&gt; 106            50-54                   8   13600</span></span>
-<span id="cb3-110"><a href=""></a><span class="co">#&gt; 107            50-54                   9    9500</span></span>
-<span id="cb3-111"><a href=""></a><span class="co">#&gt; 108            50-54            10 y más   23150</span></span>
-<span id="cb3-112"><a href=""></a><span class="co">#&gt; 109            55-59               Total  549250</span></span>
-<span id="cb3-113"><a href=""></a><span class="co">#&gt; 110            55-59                   0   93000</span></span>
-<span id="cb3-114"><a href=""></a><span class="co">#&gt; 111            55-59                   1   92050</span></span>
-<span id="cb3-115"><a href=""></a><span class="co">#&gt; 112            55-59                   2  126750</span></span>
-<span id="cb3-116"><a href=""></a><span class="co">#&gt; 113            55-59                   3   78350</span></span>
-<span id="cb3-117"><a href=""></a><span class="co">#&gt; 114            55-59                   4   44050</span></span>
-<span id="cb3-118"><a href=""></a><span class="co">#&gt; 115            55-59                   5   29400</span></span>
-<span id="cb3-119"><a href=""></a><span class="co">#&gt; 116            55-59                   6   21200</span></span>
-<span id="cb3-120"><a href=""></a><span class="co">#&gt; 117            55-59                   7   14950</span></span>
-<span id="cb3-121"><a href=""></a><span class="co">#&gt; 118            55-59                   8   14800</span></span>
-<span id="cb3-122"><a href=""></a><span class="co">#&gt; 119            55-59                   9   10950</span></span>
-<span id="cb3-123"><a href=""></a><span class="co">#&gt; 120            55-59            10 y más   23750</span></span>
-<span id="cb3-124"><a href=""></a><span class="co">#&gt; 121            60-64               Total  454750</span></span>
-<span id="cb3-125"><a href=""></a><span class="co">#&gt; 122            60-64                   0   76750</span></span>
-<span id="cb3-126"><a href=""></a><span class="co">#&gt; 123            60-64                   1   75200</span></span>
-<span id="cb3-127"><a href=""></a><span class="co">#&gt; 124            60-64                   2   93200</span></span>
-<span id="cb3-128"><a href=""></a><span class="co">#&gt; 125            60-64                   3   62000</span></span>
-<span id="cb3-129"><a href=""></a><span class="co">#&gt; 126            60-64                   4   37100</span></span>
-<span id="cb3-130"><a href=""></a><span class="co">#&gt; 127            60-64                   5   26050</span></span>
-<span id="cb3-131"><a href=""></a><span class="co">#&gt; 128            60-64                   6   20700</span></span>
-<span id="cb3-132"><a href=""></a><span class="co">#&gt; 129            60-64                   7   16000</span></span>
-<span id="cb3-133"><a href=""></a><span class="co">#&gt; 130            60-64                   8   13300</span></span>
-<span id="cb3-134"><a href=""></a><span class="co">#&gt; 131            60-64                   9    9850</span></span>
-<span id="cb3-135"><a href=""></a><span class="co">#&gt; 132            60-64            10 y más   24600</span></span>
-<span id="cb3-136"><a href=""></a><span class="co">#&gt; 133            65-69               Total  350450</span></span>
-<span id="cb3-137"><a href=""></a><span class="co">#&gt; 134            65-69                   0   59000</span></span>
-<span id="cb3-138"><a href=""></a><span class="co">#&gt; 135            65-69                   1   49700</span></span>
-<span id="cb3-139"><a href=""></a><span class="co">#&gt; 136            65-69                   2   66800</span></span>
-<span id="cb3-140"><a href=""></a><span class="co">#&gt; 137            65-69                   3   46750</span></span>
-<span id="cb3-141"><a href=""></a><span class="co">#&gt; 138            65-69                   4   33050</span></span>
-<span id="cb3-142"><a href=""></a><span class="co">#&gt; 139            65-69                   5   24250</span></span>
-<span id="cb3-143"><a href=""></a><span class="co">#&gt; 140            65-69                   6   17500</span></span>
-<span id="cb3-144"><a href=""></a><span class="co">#&gt; 141            65-69                   7   13700</span></span>
-<span id="cb3-145"><a href=""></a><span class="co">#&gt; 142            65-69                   8   10800</span></span>
-<span id="cb3-146"><a href=""></a><span class="co">#&gt; 143            65-69                   9    8550</span></span>
-<span id="cb3-147"><a href=""></a><span class="co">#&gt; 144            65-69            10 y más   20350</span></span>
-<span id="cb3-148"><a href=""></a><span class="co">#&gt; 145            70-74               Total  244200</span></span>
-<span id="cb3-149"><a href=""></a><span class="co">#&gt; 146            70-74                   0   40800</span></span>
-<span id="cb3-150"><a href=""></a><span class="co">#&gt; 147            70-74                   1   28650</span></span>
-<span id="cb3-151"><a href=""></a><span class="co">#&gt; 148            70-74                   2   42450</span></span>
-<span id="cb3-152"><a href=""></a><span class="co">#&gt; 149            70-74                   3   31900</span></span>
-<span id="cb3-153"><a href=""></a><span class="co">#&gt; 150            70-74                   4   26250</span></span>
-<span id="cb3-154"><a href=""></a><span class="co">#&gt; 151            70-74                   5   19350</span></span>
-<span id="cb3-155"><a href=""></a><span class="co">#&gt; 152            70-74                   6   12950</span></span>
-<span id="cb3-156"><a href=""></a><span class="co">#&gt; 153            70-74                   7   10650</span></span>
-<span id="cb3-157"><a href=""></a><span class="co">#&gt; 154            70-74                   8    7950</span></span>
-<span id="cb3-158"><a href=""></a><span class="co">#&gt; 155            70-74                   9    6800</span></span>
-<span id="cb3-159"><a href=""></a><span class="co">#&gt; 156            70-74            10 y más   16450</span></span>
-<span id="cb3-160"><a href=""></a><span class="co">#&gt; 157            75-79               Total  156550</span></span>
-<span id="cb3-161"><a href=""></a><span class="co">#&gt; 158            75-79                   0   24400</span></span>
-<span id="cb3-162"><a href=""></a><span class="co">#&gt; 159            75-79                   1   18000</span></span>
-<span id="cb3-163"><a href=""></a><span class="co">#&gt; 160            75-79                   2   21900</span></span>
-<span id="cb3-164"><a href=""></a><span class="co">#&gt; 161            75-79                   3   19000</span></span>
-<span id="cb3-165"><a href=""></a><span class="co">#&gt; 162            75-79                   4   16550</span></span>
-<span id="cb3-166"><a href=""></a><span class="co">#&gt; 163            75-79                   5   12350</span></span>
-<span id="cb3-167"><a href=""></a><span class="co">#&gt; 164            75-79                   6   10500</span></span>
-<span id="cb3-168"><a href=""></a><span class="co">#&gt; 165            75-79                   7    9250</span></span>
-<span id="cb3-169"><a href=""></a><span class="co">#&gt; 166            75-79                   8    7050</span></span>
-<span id="cb3-170"><a href=""></a><span class="co">#&gt; 167            75-79                   9    4700</span></span>
-<span id="cb3-171"><a href=""></a><span class="co">#&gt; 168            75-79            10 y más   12850</span></span>
-<span id="cb3-172"><a href=""></a><span class="co">#&gt; 169            80-84               Total   89400</span></span>
-<span id="cb3-173"><a href=""></a><span class="co">#&gt; 170            80-84                   0   13650</span></span>
-<span id="cb3-174"><a href=""></a><span class="co">#&gt; 171            80-84                   1   10450</span></span>
-<span id="cb3-175"><a href=""></a><span class="co">#&gt; 172            80-84                   2    9450</span></span>
-<span id="cb3-176"><a href=""></a><span class="co">#&gt; 173            80-84                   3   10000</span></span>
-<span id="cb3-177"><a href=""></a><span class="co">#&gt; 174            80-84                   4    9200</span></span>
-<span id="cb3-178"><a href=""></a><span class="co">#&gt; 175            80-84                   5    8200</span></span>
-<span id="cb3-179"><a href=""></a><span class="co">#&gt; 176            80-84                   6    6850</span></span>
-<span id="cb3-180"><a href=""></a><span class="co">#&gt; 177            80-84                   7    5100</span></span>
-<span id="cb3-181"><a href=""></a><span class="co">#&gt; 178            80-84                   8    3950</span></span>
-<span id="cb3-182"><a href=""></a><span class="co">#&gt; 179            80-84                   9    4300</span></span>
-<span id="cb3-183"><a href=""></a><span class="co">#&gt; 180            80-84            10 y más    8250</span></span>
-<span id="cb3-184"><a href=""></a><span class="co">#&gt; 181         85 y más               Total   52350</span></span>
-<span id="cb3-185"><a href=""></a><span class="co">#&gt; 182         85 y más                   0    6950</span></span>
-<span id="cb3-186"><a href=""></a><span class="co">#&gt; 183         85 y más                   1    5300</span></span>
-<span id="cb3-187"><a href=""></a><span class="co">#&gt; 184         85 y más                   2    5150</span></span>
-<span id="cb3-188"><a href=""></a><span class="co">#&gt; 185         85 y más                   3    5700</span></span>
-<span id="cb3-189"><a href=""></a><span class="co">#&gt; 186         85 y más                   4    4900</span></span>
-<span id="cb3-190"><a href=""></a><span class="co">#&gt; 187         85 y más                   5    4900</span></span>
-<span id="cb3-191"><a href=""></a><span class="co">#&gt; 188         85 y más                   6    4050</span></span>
-<span id="cb3-192"><a href=""></a><span class="co">#&gt; 189         85 y más                   7    3900</span></span>
-<span id="cb3-193"><a href=""></a><span class="co">#&gt; 190         85 y más                   8    2650</span></span>
-<span id="cb3-194"><a href=""></a><span class="co">#&gt; 191         85 y más                   9    3000</span></span>
-<span id="cb3-195"><a href=""></a><span class="co">#&gt; 192         85 y más            10 y más    5850</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="fu">get_census</span>( <span class="at">year =</span> <span class="dv">1970</span>, <span class="at">topic =</span> <span class="st">"CONDICIONES HABITACIONALES"</span>, <span class="at">geolvl =</span> <span class="st">"Total del país"</span>)</span>
+<span id="cb3-2"><a href=""></a><span class="co">#&gt; $c70_total_del_pais_poblacion_c18</span></span>
+<span id="cb3-3"><a href=""></a><span class="co">#&gt;                   regimen_de_tenencia hogares personas  cuartos</span></span>
+<span id="cb3-4"><a href=""></a><span class="co">#&gt; 1                         Propietario 3553250 13778700 11197900</span></span>
+<span id="cb3-5"><a href=""></a><span class="co">#&gt; 2            Inquilino o arrendatario 1380950  4692800  3305350</span></span>
+<span id="cb3-6"><a href=""></a><span class="co">#&gt; 3 Ocupante en relación de dependencia  353300  1402500   880050</span></span>
+<span id="cb3-7"><a href=""></a><span class="co">#&gt; 4                   Ocupante gratuito  575650  2271150  1196500</span></span>
+<span id="cb3-8"><a href=""></a><span class="co">#&gt; 5                    En otro carácter  192950   816350   419800</span></span>
+<span id="cb3-9"><a href=""></a><span class="co">#&gt; </span></span>
+<span id="cb3-10"><a href=""></a><span class="co">#&gt; $c70_total_del_pais_poblacion_c20</span></span>
+<span id="cb3-11"><a href=""></a><span class="co">#&gt;     tama?o_hogar                     regimen_tenencia hogares</span></span>
+<span id="cb3-12"><a href=""></a><span class="co">#&gt; 1   De 1 persona                                Total  615900</span></span>
+<span id="cb3-13"><a href=""></a><span class="co">#&gt; 2   De 1 persona                          Propietario  255900</span></span>
+<span id="cb3-14"><a href=""></a><span class="co">#&gt; 3   De 1 persona             Inquilino o arrendatario  199350</span></span>
+<span id="cb3-15"><a href=""></a><span class="co">#&gt; 4   De 1 persona Ocupante con relación de dependencia   52600</span></span>
+<span id="cb3-16"><a href=""></a><span class="co">#&gt; 5   De 1 persona                    Ocupante gratuito   82100</span></span>
+<span id="cb3-17"><a href=""></a><span class="co">#&gt; 6   De 1 persona                                 Otro   25950</span></span>
+<span id="cb3-18"><a href=""></a><span class="co">#&gt; 7  De 2 personas                                Total 1125250</span></span>
+<span id="cb3-19"><a href=""></a><span class="co">#&gt; 8  De 2 personas                          Propietario  652950</span></span>
+<span id="cb3-20"><a href=""></a><span class="co">#&gt; 9  De 2 personas             Inquilino o arrendatario  302400</span></span>
+<span id="cb3-21"><a href=""></a><span class="co">#&gt; 10 De 2 personas Ocupante con relación de dependencia   49250</span></span>
+<span id="cb3-22"><a href=""></a><span class="co">#&gt; 11 De 2 personas                    Ocupante gratuito   91300</span></span>
+<span id="cb3-23"><a href=""></a><span class="co">#&gt; 12 De 2 personas                                 Otro   29350</span></span>
+<span id="cb3-24"><a href=""></a><span class="co">#&gt; 13 De 3 personas                                Total 1230600</span></span>
+<span id="cb3-25"><a href=""></a><span class="co">#&gt; 14 De 3 personas                          Propietario  744800</span></span>
+<span id="cb3-26"><a href=""></a><span class="co">#&gt; 15 De 3 personas             Inquilino o arrendatario  290650</span></span>
+<span id="cb3-27"><a href=""></a><span class="co">#&gt; 16 De 3 personas Ocupante con relación de dependencia   62150</span></span>
+<span id="cb3-28"><a href=""></a><span class="co">#&gt; 17 De 3 personas                    Ocupante gratuito  103200</span></span>
+<span id="cb3-29"><a href=""></a><span class="co">#&gt; 18 De 3 personas                                 Otro   29800</span></span>
+<span id="cb3-30"><a href=""></a><span class="co">#&gt; 19 De 4 personas                                Total 1255000</span></span>
+<span id="cb3-31"><a href=""></a><span class="co">#&gt; 20 De 4 personas                          Propietario  787900</span></span>
+<span id="cb3-32"><a href=""></a><span class="co">#&gt; 21 De 4 personas             Inquilino o arrendatario  266000</span></span>
+<span id="cb3-33"><a href=""></a><span class="co">#&gt; 22 De 4 personas Ocupante con relación de dependencia   65650</span></span>
+<span id="cb3-34"><a href=""></a><span class="co">#&gt; 23 De 4 personas                    Ocupante gratuito  102850</span></span>
+<span id="cb3-35"><a href=""></a><span class="co">#&gt; 24 De 4 personas                                 Otro   32600</span></span>
+<span id="cb3-36"><a href=""></a><span class="co">#&gt; 25 De 5 personas                                Total  818550</span></span>
+<span id="cb3-37"><a href=""></a><span class="co">#&gt; 26 De 5 personas                          Propietario  516100</span></span>
+<span id="cb3-38"><a href=""></a><span class="co">#&gt; 27 De 5 personas             Inquilino o arrendatario  157500</span></span>
+<span id="cb3-39"><a href=""></a><span class="co">#&gt; 28 De 5 personas Ocupante con relación de dependencia   48200</span></span>
+<span id="cb3-40"><a href=""></a><span class="co">#&gt; 29 De 5 personas                    Ocupante gratuito   71550</span></span>
+<span id="cb3-41"><a href=""></a><span class="co">#&gt; 30 De 5 personas                                 Otro   25200</span></span>
+<span id="cb3-42"><a href=""></a><span class="co">#&gt; 31 De 6 personas                                Total  443250</span></span>
+<span id="cb3-43"><a href=""></a><span class="co">#&gt; 32 De 6 personas                          Propietario  272000</span></span>
+<span id="cb3-44"><a href=""></a><span class="co">#&gt; 33 De 6 personas             Inquilino o arrendatario   80000</span></span>
+<span id="cb3-45"><a href=""></a><span class="co">#&gt; 34 De 6 personas Ocupante con relación de dependencia   29000</span></span>
+<span id="cb3-46"><a href=""></a><span class="co">#&gt; 35 De 6 personas                    Ocupante gratuito   45750</span></span>
+<span id="cb3-47"><a href=""></a><span class="co">#&gt; 36 De 6 personas                                 Otro   16500</span></span>
+<span id="cb3-48"><a href=""></a><span class="co">#&gt; 37 De 7 personas                                Total  276750</span></span>
+<span id="cb3-49"><a href=""></a><span class="co">#&gt; 38 De 7 personas                          Propietario  163400</span></span>
+<span id="cb3-50"><a href=""></a><span class="co">#&gt; 39 De 7 personas             Inquilino o arrendatario   44950</span></span>
+<span id="cb3-51"><a href=""></a><span class="co">#&gt; 40 De 7 personas Ocupante con relación de dependencia   19950</span></span>
+<span id="cb3-52"><a href=""></a><span class="co">#&gt; 41 De 7 personas                    Ocupante gratuito   35200</span></span>
+<span id="cb3-53"><a href=""></a><span class="co">#&gt; 42 De 7 personas                                 Otro   13250</span></span>
+<span id="cb3-54"><a href=""></a><span class="co">#&gt; 43 De 8 personas                                Total  121450</span></span>
+<span id="cb3-55"><a href=""></a><span class="co">#&gt; 44 De 8 personas                          Propietario   70600</span></span>
+<span id="cb3-56"><a href=""></a><span class="co">#&gt; 45 De 8 personas             Inquilino o arrendatario   18250</span></span>
+<span id="cb3-57"><a href=""></a><span class="co">#&gt; 46 De 8 personas Ocupante con relación de dependencia   10050</span></span>
+<span id="cb3-58"><a href=""></a><span class="co">#&gt; 47 De 8 personas                    Ocupante gratuito   16250</span></span>
+<span id="cb3-59"><a href=""></a><span class="co">#&gt; 48 De 8 personas                                 Otro    6300</span></span>
+<span id="cb3-60"><a href=""></a><span class="co">#&gt; 49 De 9 personas                                Total   76000</span></span>
+<span id="cb3-61"><a href=""></a><span class="co">#&gt; 50 De 9 personas                          Propietario   40950</span></span>
+<span id="cb3-62"><a href=""></a><span class="co">#&gt; 51 De 9 personas             Inquilino o arrendatario    9400</span></span>
+<span id="cb3-63"><a href=""></a><span class="co">#&gt; 52 De 9 personas Ocupante con relación de dependencia    7150</span></span>
+<span id="cb3-64"><a href=""></a><span class="co">#&gt; 53 De 9 personas                    Ocupante gratuito   12900</span></span>
+<span id="cb3-65"><a href=""></a><span class="co">#&gt; 54 De 9 personas                                 Otro    5600</span></span>
+<span id="cb3-66"><a href=""></a><span class="co">#&gt; 55   De 10 y más                                Total   93350</span></span>
+<span id="cb3-67"><a href=""></a><span class="co">#&gt; 56   De 10 y más                          Propietario   48650</span></span>
+<span id="cb3-68"><a href=""></a><span class="co">#&gt; 57   De 10 y más             Inquilino o arrendatario   12450</span></span>
+<span id="cb3-69"><a href=""></a><span class="co">#&gt; 58   De 10 y más Ocupante con relación de dependencia    9300</span></span>
+<span id="cb3-70"><a href=""></a><span class="co">#&gt; 59   De 10 y más                    Ocupante gratuito   14550</span></span>
+<span id="cb3-71"><a href=""></a><span class="co">#&gt; 60   De 10 y más                                 Otro    8400</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="check_repository" class="slide level2">
-<h2><code>check_repository()</code></h2>
+<section id="check_repository---reporte-de-tablas-disponibles" class="slide level2">
+<h2><code>check_repository()</code> - reporte de tablas disponibles</h2>
+<p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a><span class="fu">check_repository</span>( <span class="at">year =</span> <span class="dv">1970</span>, <span class="at">topic =</span> <span class="st">"FECUNDIDAD"</span>, <span class="at">geolvl =</span> <span class="st">"Total del país"</span>)</span>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a><span class="fu">check_repository</span>( <span class="at">year =</span> <span class="dv">1970</span>, <span class="at">topic =</span> <span class="st">"CONDICIONES HABITACIONALES"</span>, <span class="at">geolvl =</span> <span class="st">"Total del país"</span>)</span>
 <span id="cb4-2"><a href=""></a><span class="co">#&gt;                            Archivo</span></span>
-<span id="cb4-3"><a href=""></a><span class="co">#&gt; 1 c70_total_del_pais_poblacion_c17</span></span>
-<span id="cb4-4"><a href=""></a><span class="co">#&gt;                                                                                                                            Titulo</span></span>
-<span id="cb4-5"><a href=""></a><span class="co">#&gt; 1 Cuadro 17. Total del país. Población femenina de 12 y más años, por grupo de edad según número de hijos nacidos vivos. Año 1970</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-3"><a href=""></a><span class="co">#&gt; 1 c70_total_del_pais_poblacion_c18</span></span>
+<span id="cb4-4"><a href=""></a><span class="co">#&gt; 2 c70_total_del_pais_poblacion_c20</span></span>
+<span id="cb4-5"><a href=""></a><span class="co">#&gt;                                                                                                      Titulo</span></span>
+<span id="cb4-6"><a href=""></a><span class="co">#&gt; 1    Cuadro 18. Total del país. Hogares particulares, personas y cuartos, por régimen de tenencia. Año 1970</span></span>
+<span id="cb4-7"><a href=""></a><span class="co">#&gt; 2 Cuadro 20. Total del país. Hogares particulares, por tamaño del hogar según régimen de tenencia. Año 1970</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="arcenso-2" class="slide level2">
-<h2><code>arcenso()</code></h2>
+<section id="arcenso---shinyapp-de-consulta" class="slide level2">
+<h2><code>arcenso()</code> - shinyapp de consulta</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a><span class="fu">arcenso</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
-<img data-src="images/shiny.png" style="width:90.0%" class="r-stretch"></section></section>
+<img data-src="images/shiny.png" style="width:100.0%" class="r-stretch"></section>
+<section id="documentación" class="slide level2">
+<h2>Documentación</h2>
+<div class="cell">
+<iframe src="https://soyandrea.github.io/arcenso/" width="960" height="600" data-external="1">
+</iframe>
+</div>
+</section></section>
 <section>
-<section id="próximos-pasos" class="title-slide slide level1 center">
-<h1>Próximos pasos</h1>
+<section id="próximos-pasos-y-metas" class="title-slide slide level1 center">
+<h1>Próximos pasos y metas 💫</h1>
 
 </section>
-<section id="hola" class="slide level2">
-<h2>¡Hola 👋!</h2>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="https://i.pinimg.com/originals/9f/ff/73/9fff730a3d58f7973f6e2891ee468a2d.gif"></p>
+</div><div class="column" style="width:60%;">
+<ul>
+<li>mejorar la documentación</li>
+<li>continuar con el roadmap por etapas y el proceso de clasificación, revisión y formateo.</li>
+<li>lograr los estandares óptimos para llegar al peer-review</li>
+<li>sumar a mas usuarios a utilizar el paquete</li>
+</ul>
+</div></div>
+</section>
+<section id="gracias" class="slide level2">
+<h2>Gracias 😁</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><img data-src="https://avatars.githubusercontent.com/u/45582182?v=4.png" style="border-radius: 80%;;width:50.0%"></p>
@@ -751,8 +688,7 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
 <p><img data-src="https://avatars.githubusercontent.com/u/64991969?v=4.png" style="border-radius: 80%;;width:50.0%"></p>
 <p><strong>Emanuel</strong></p>
 <p>Estadístico</p>
-</div>
-</div>
+</div></div>
 <div class="quarto-auto-generated-content">
 <p><img src="images/LatinR_hex_secundario.png" class="slide-logo"></p>
 <div class="footer footer-default">
@@ -1079,18 +1015,7 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1122,7 +1047,29 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -1130,7 +1077,7 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {

@@ -22,12 +22,12 @@ from: markdown+emoji
 
 ::: columns
 ::: {.column width="30%"}
-![](images/arcenso1.png)
+![hex arcenso](images/arcenso1.png)
 
 :::
 
 ::: {.column width="70%"}
-**Es un proyecto apoyado por el programa de Campeones y Campeonas de rOpenSci cohorte 2023-2024, con Andrea Gómez Vargas como desarrolladora principal, Emanuel Ciardullo como co-desarrollador y Luis D. Verde Arregoitia como mentor.**
+Es un proyecto apoyado por el programa de Campeones y Campeonas de rOpenSci cohorte 2023-2024^[[Introducing rOpenSci Champions - Cohort 2023-2024](https://ropensci.org/blog/2024/02/15/champions-program-champions-2024/)], con Andrea Gómez Vargas como desarrolladora principal, Emanuel Ciardullo como co-desarrollador y Luis D. Verde Arregoitia como mentor.
 :::
 
 :::
@@ -58,14 +58,17 @@ Con una duración de 12 meses que incluye formación basada en cohortes, desarro
 
 ## Enfoque - cohorte 2023-2024 
 ::: columns
-::: {.column width="40%"}
+::: {.column width="50%"}
 
-![grupo de cohorte ropensci champios](images/champios2024.png){width="100%"}
+![cohorte ropensci champios](images/champios2024.png){width="100%"}
 :::
 
-::: {.column width="60%"}
+::: {.column width="50%"}
 
 ::: r-fit-text
+<br>
+<br>
+
 El programa está enfocado y pensando para que participen personas que pertenecen a grupos histórica y sistemáticamente excluidos de las comunidades de software abierto y de software de investigación y que están interesadas en contribuir a rOpenSci y al ecosistema más amplio de comunidades de software de código abierto y de investigación.
 :::
 
@@ -77,29 +80,30 @@ El programa está enfocado y pensando para que participen personas que pertenece
 
 ## ¿Cuál fue(es) mi proyecto? 
 
+<br>
 
-Generar un paquete que permita disponer de los datos oficiales de los censos nacionales de población en Argentina provenientes del INDEC desde 1970 hasta 2022, homogeneizados, ordenados y listos para usar. 
+**Generar un paquete que permita disponer de los datos oficiales de los censos nacionales de población en Argentina** provenientes del INDEC desde 1970 hasta 2022, homogeneizados, ordenados y listos para usar. 
 
-Contar con un paquete de información censal permitirá al sector público y privado, a los ciudadanos y a otros actores de la sociedad acceder a información actual e histórica sobre la población, los hogares y las viviendas de Argentina de una manera más accesible.
 
 ## ¿Por qué?
 
+<br>
+
 Actualmente los resultados históricos censales de **1970, 1980, 1991, 2001, 2010 y 2022** están disponibles en distintos formatos a través de libros físicos, PDFs, archivos en formato excel o en REDATAM, sin contar con un sistema o formato unificado que permita trabajar con los datos de estos seis periodos censales como base de datos.
 
-Además, la presentación de los datos no está homogeneizada entre periodos dificultando la comparación histórica o en serie de la información disponible.
 
 ## Propuesta
 
-De cuadros de excel a tablas ordenadas en R
+> De cuadros de excel a **tablas ordenadas** en R
 
 ::: columns
 ::: {.column width="70%"}
-![](images/excel.png){width="110%"}
+![cuadro de excel descargado](images/excel.png){width="110%"}
 
 :::
 
 ::: {.column width="30%"}
-![](images/tabla.png){width="100%"}
+![tabla ordenada en R](images/tabla.png){width="100%"}
 
 :::
 
@@ -107,6 +111,8 @@ De cuadros de excel a tablas ordenadas en R
 
 
 ## ¿Porque son importante los datos censales? 
+
+::: {.incremental}
 
 - Es una herramienta clave para entender las caracteristicas y necesidades de la población.
 
@@ -116,14 +122,38 @@ De cuadros de excel a tablas ordenadas en R
 
 - Investigación académica y estudios sociales
 
--  y mucho más...
-
+-  Investigaciones de mercado y mucho más...
+:::
 
 # Proceso de trabajo 
 
+## pregunta - problema
+
+¿Cómo empezar?
+
+
+::: {.r-stack}
+
+
+
+
+![logos censales de argentina](images/censos.png){.fragment top=200  left=0 width="90%"}
+
+
+
+
+
+![meme](images/meme.png){.fragment top=200  left=0}
+
+
+:::
+
+
 ## Trainings
 
-## Mentorias 
+
+
+## Mentorias & encuentros
 
 ::: {.r-stack}
 
@@ -146,7 +176,8 @@ De cuadros de excel a tablas ordenadas en R
 
 <br>
 <br>
-![](images/arcenso.png){width="90%"}
+<br>
+![](images/arcenso.png){width="150%"}
 
 
 ## ¿Cómo funciona? 
@@ -170,35 +201,61 @@ library(arcenso)
 ```
 
 
-## `get_census()`
+## `get_census()` - obtener tablas 
 
 ```{r}
-get_census( year = 1970, topic = "FECUNDIDAD", geolvl = "Total del país")
+get_census( year = 1970, topic = "CONDICIONES HABITACIONALES", geolvl = "Total del país")
 ```
 
 
-## `check_repository()`
+## `check_repository()` - reporte de tablas disponibles
+
+<br>
 
 ```{r}
-check_repository( year = 1970, topic = "FECUNDIDAD", geolvl = "Total del país")
+check_repository( year = 1970, topic = "CONDICIONES HABITACIONALES", geolvl = "Total del país")
 ```
 
 
-## `arcenso()` 
+## `arcenso()` - shinyapp de consulta
 
 ```{r eval=FALSE}
 arcenso()
 ```
 
 
-![](images/shiny.png){width="90%"}
+
+![](images/shiny.png){width="100%"}
 
 
+## Documentación
 
-# Próximos pasos
+```{r echo=FALSE}
+knitr::include_url("https://soyandrea.github.io/arcenso/",height = 600)
+```
 
 
-## ¡Hola 👋!
+# Próximos pasos y metas 💫
+
+## 
+
+::: columns
+::: {.column width="40%"}
+![](https://i.pinimg.com/originals/9f/ff/73/9fff730a3d58f7973f6e2891ee468a2d.gif)
+
+:::
+
+::: {.column width="60%"}
+
+
+- mejorar la documentación
+- continuar con el roadmap por etapas y el proceso de clasificación, revisión y formateo.
+- lograr los estandares óptimos para llegar al peer-review
+- sumar a mas usuarios a utilizar el paquete
+:::
+:::
+
+## Gracias 😁
 
 ::: columns
 ::: {.column width="50%"}
