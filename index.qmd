@@ -22,6 +22,8 @@ from: markdown+emoji
 
 ::: columns
 ::: {.column width="30%"}
+
+<br>
 ![hex arcenso](images/arcenso1.png)
 
 :::
@@ -110,7 +112,7 @@ Actualmente los resultados históricos censales de **1970, 1980, 1991, 2001, 201
 :::
 
 
-## ¿Porque son importante los datos censales? 
+## ¿Por qué son importante los datos censales? 
 
 ::: {.incremental}
 
@@ -137,13 +139,13 @@ Actualmente los resultados históricos censales de **1970, 1980, 1991, 2001, 201
 
 
 
-![logos censales de argentina](images/censos.png){.fragment top=200  left=0 width="90%"}
+![logos censales de argentina](images/censos.png){.fragment top=200 left=0 width="80%"
 
 
 
 
 
-![meme](images/meme.png){.fragment top=200  left=0}
+![meme](images/meme.png){.fragment top=50 right=50 width="50%"}
 
 
 :::
@@ -237,7 +239,9 @@ knitr::include_url("https://soyandrea.github.io/arcenso/",height = 600)
 
 # Próximos pasos y metas 💫
 
-## 
+## 👣
+
+::: {.incremental}
 
 ::: columns
 ::: {.column width="40%"}
@@ -247,11 +251,12 @@ knitr::include_url("https://soyandrea.github.io/arcenso/",height = 600)
 
 ::: {.column width="60%"}
 
-
 - mejorar la documentación
 - continuar con el roadmap por etapas y el proceso de clasificación, revisión y formateo.
 - lograr los estandares óptimos para llegar al peer-review
 - sumar a mas usuarios a utilizar el paquete
+
+:::
 :::
 :::
 
