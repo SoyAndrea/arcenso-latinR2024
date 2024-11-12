@@ -7,6 +7,7 @@ format:
     self-contained: false
     slide-number: c/t
     logo: images/LatinR_hex_secundario.png
+    highlight-style: a11y
     css: logo.css
     footer: "[**soyandrea.github.io/arcenso**](https://soyandrea.github.io/arcenso/)"
 knitr:
@@ -29,7 +30,7 @@ from: markdown+emoji
 :::
 
 ::: {.column width="70%"}
-Es un proyecto apoyado por el programa de Campeones y Campeonas de rOpenSci cohorte 2023-2024^[[Introducing rOpenSci Champions - Cohort 2023-2024](https://ropensci.org/blog/2024/02/15/champions-program-champions-2024/)], con Andrea Gómez Vargas como desarrolladora principal, Emanuel Ciardullo como co-desarrollador y Luis D. Verde Arregoitia como mentor.
+Es un proyecto apoyado por el programa de Campeones y Campeonas de rOpenSci cohorte 2023-2024^[[Introducing rOpenSci Champions - Cohort 2023-2024](https://ropensci.org/blog/2024/02/15/champions-program-champions-2024/)], con Andrea Gómez Vargas como desarrolladora principal, Emanuel Ciardullo como co-desarrollador y Luis D. Verde como mentor.
 :::
 
 :::
@@ -129,6 +130,7 @@ Actualmente los resultados históricos censales de **1970, 1980, 1991, 2001, 201
 
 # Proceso de trabajo 
 
+
 ## pregunta - problema
 
 ¿Cómo empezar?
@@ -139,7 +141,7 @@ Actualmente los resultados históricos censales de **1970, 1980, 1991, 2001, 201
 
 
 
-![logos censales de argentina](images/censos.png){.fragment top=200 left=0 width="80%"
+![logos censales de argentina](images/censos.png){.fragment top=200 left=0 width="80%"}
 
 
 
@@ -153,33 +155,116 @@ Actualmente los resultados históricos censales de **1970, 1980, 1991, 2001, 201
 
 ## Trainings
 
+::: columns
+::: {.column width="20%"}
+<br>
 
-
-## Mentorias & encuentros
-
-::: {.r-stack}
-
-![](images/posit3.jpg){.fragment top=200 left=0 width="30%"}
-
-![](images/posito2.jpg){.fragment top=50 right=50 width="40%"}
-
-![](images/posit1.jpg){.fragment bottom=0 right=50 width="40%"}
+![rOpenSci image](images/champions_program_pictures/peep5.png)
 
 :::
 
-## Diseño conceptual 
+::: {.column width="80%"}
 
+<br>
+
+Participación en capacitaciones que incluyeron temáticas sobre conocimientos técnicos en desarrollo y revisión de software, contribuciones a los proyectos de rOpenSci y de R, entre otros.
+
+
+
+:::
+:::
+
+## Mentorias & encuentros {.center}
+
+::: r-fit-text
+Seguimiento personalizado del proyecto con mi mentor, participantes del programa y community manager de rOpenSci para compartir avances, experiencias y sugerencias colectivamente. Y tuve la fortuna de conocer a algunos en persona en la posit::conf de este año. 
+:::
+
+::: {.r-stack}
+
+![](images/posit3.jpg){.fragment top=200 left=0 width="25%"}
+
+![](images/posito2.jpg){.fragment top=50 right=50 width="40%"}
+
+![](images/posit1.jpg){.fragment bottom=0 right=50 width="60%"}
+
+:::
+
+## Antes de las funciones: diseño conceptual 
+
+![](images/esquema3.png)
+
+## Manos a la obra :hammer_and_wrench:
+
+::: columns
+::: {.column width="15%"}
+
+
+![](images/python.png)
+<br>
+
+![](images/R.png)
+
+:::
+
+::: {.column width="85%"}
+
+
+- webscraping para descarga de cuadros censales 
+
+- listar los archivos descargados extrayendo su información
+
+- para la conversión de los cuadros de excel en formato tidy en Rbase
+
+:::
+
+::: 
+
+
+## Problemas: lluvia de excels y formatos no estandarizados
+
+::: {.r-stack}
+
+![](images/lluvia.png){.fragment top=200 left=0 width="60%"}
+
+
+![](images/cuadro2.png){.fragment top=100 left=0 width="80%"}
+
+![](images/cuadro.png){.fragment top=50 right=50 width="80%"}
+
+
+![](images/meme3.png){.fragment top=50 right=50 width="40%"}
+
+![](images/meme2.png){.fragment top=50 right=50 width="40%"}
+
+:::
+
+
+
+
+
+
+## ¿Cómo nos organizamos?
+![](images/esquema2.png)
+
+## Etapas censales
+
+![](images/esquema1.png)
+
+
+## Github projects - status del proyecto
+
+![](images/project.png)
+
+## issues en github para seguimiento
+
+![](images/issues.png)
 
 
 
 # {arcenso} 📦
 
-##
 
-<br>
-<br>
-<br>
-![](images/arcenso.png){width="150%"}
 
 
 ## ¿Cómo funciona? 
@@ -260,12 +345,19 @@ knitr::include_url("https://soyandrea.github.io/arcenso/",height = 600)
 :::
 :::
 
+# Lo más importante
+
+
+## 
+
+![](images/codehero.png)
+
 ## Gracias 😁
 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="33%"}
 
-![](https://avatars.githubusercontent.com/u/45582182?v=4){width="50%" style="border-radius: 80%;"}
+![](https://avatars.githubusercontent.com/u/45582182?v=4){width="60%" style="border-radius: 80%;"}
 
 **Andrea**
 
@@ -276,9 +368,9 @@ Socióloga
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="33%"}
 
-![](https://avatars.githubusercontent.com/u/64991969?v=4){width="50%" style="border-radius: 80%;"}
+![](https://avatars.githubusercontent.com/u/64991969?v=4){width="60%" style="border-radius: 80%;"}
 
 **Emanuel**
 
@@ -286,5 +378,21 @@ Estadístico
 
 :::
 
+::: {.column width="33%"}
+
+![](images/fito.jpg){width="60%" style="border-radius: 80%;"}
+
+**Fito**
+
+Supervisor
+
 :::
 
+:::
+
+##
+
+<br>
+<br>
+<br>
+![](images/arcenso.png){width="150%"}

@@ -56,44 +56,44 @@
         -khtml-user-select: none; -moz-user-select: none;
         -ms-user-select: none; user-select: none;
         padding: 0 4px; width: 4em;
-        color: #aaaaaa;
+        color: #767676;
       }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #767676;  padding-left: 4px; }
     div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
+      { color: #545454; background-color: #fefefe; }
     @media screen {
     pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
     }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
+    code span { color: #545454; } /* Normal */
+    code span.al { color: #7928a1; } /* Alert */
+    code span.an { color: #696969; } /* Annotation */
+    code span.at { color: #a55a00; } /* Attribute */
+    code span.bn { color: #7928a1; } /* BaseN */
     code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
+    code span.cf { color: #d91e18; } /* ControlFlow */
+    code span.ch { color: #008000; } /* Char */
+    code span.cn { color: #d91e18; } /* Constant */
+    code span.co { color: #696969; } /* Comment */
+    code span.cv { color: #696969; font-style: italic; } /* CommentVar */
+    code span.do { color: #696969; font-style: italic; } /* Documentation */
+    code span.dt { color: #7928a1; } /* DataType */
+    code span.dv { color: #7928a1; } /* DecVal */
+    code span.er { color: #7928a1; } /* Error */
     code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+    code span.fl { color: #a55a00; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #696969; } /* Information */
+    code span.kw { color: #d91e18; } /* Keyword */
+    code span.op { color: #00769e; } /* Operator */
+    code span.ot { color: #d91e18; } /* Other */
+    code span.pp { color: #7928a1; } /* Preprocessor */
+    code span.sc { color: #00769e; } /* SpecialChar */
+    code span.ss { color: #008000; } /* SpecialString */
+    code span.st { color: #008000; } /* String */
+    code span.va { color: #a55a00; } /* Variable */
+    code span.vs { color: #008000; } /* VerbatimString */
+    code span.wa { color: #696969; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="logo.css">
@@ -409,7 +409,7 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
 <div class="column" style="width:30%;">
 <p><br> <img data-src="images/arcenso1.png" alt="hex arcenso"></p>
 </div><div class="column" style="width:70%;">
-<p>Es un proyecto apoyado por el programa de Campeones y Campeonas de rOpenSci cohorte 2023-2024<sup>1</sup>, con Andrea Gómez Vargas como desarrolladora principal, Emanuel Ciardullo como co-desarrollador y Luis D. Verde Arregoitia como mentor.</p>
+<p>Es un proyecto apoyado por el programa de Campeones y Campeonas de rOpenSci cohorte 2023-2024<sup>1</sup>, con Andrea Gómez Vargas como desarrolladora principal, Emanuel Ciardullo como co-desarrollador y Luis D. Verde como mentor.</p>
 </div></div>
 <aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://ropensci.org/blog/2024/02/15/champions-program-champions-2024/">Introducing rOpenSci Champions - Cohort 2023-2024</a></p></li></ol></aside></section>
 <section>
@@ -498,7 +498,12 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
 <h2>pregunta - problema</h2>
 <p>¿Cómo empezar?</p>
 <div class="r-stack">
-<p><img data-src="images/censos.png" alt="logos censales de argentina">{.fragment top=200 left=0 width=“80%”</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/censos.png" class="fragment" style="width:80.0%" data-top="200" data-left="0"></p>
+<figcaption>logos censales de argentina</figcaption>
+</figure>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/meme.png" class="fragment" style="width:50.0%" data-top="50" data-right="50"></p>
@@ -509,26 +514,79 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
 </section>
 <section id="trainings" class="slide level2">
 <h2>Trainings</h2>
+<div class="columns">
+<div class="column" style="width:20%;">
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/champions_program_pictures/peep5.png"></p>
+<figcaption>rOpenSci image</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:80%;">
+<p><br></p>
+<p>Participación en capacitaciones que incluyeron temáticas sobre conocimientos técnicos en desarrollo y revisión de software, contribuciones a los proyectos de rOpenSci y de R, entre otros.</p>
+</div></div>
 </section>
-<section id="mentorias-encuentros" class="slide level2">
+<section id="mentorias-encuentros" class="slide level2 center">
 <h2>Mentorias &amp; encuentros</h2>
+<div class="r-fit-text">
+<p>Seguimiento personalizado del proyecto con mi mentor, participantes del programa y community manager de rOpenSci para compartir avances, experiencias y sugerencias colectivamente. Y tuve la fortuna de conocer a algunos en persona en la posit::conf de este año.</p>
+</div>
 <div class="r-stack">
-<p><img data-src="images/posit3.jpg" class="fragment" style="width:30.0%" data-top="200" data-left="0"></p>
+<p><img data-src="images/posit3.jpg" class="fragment" style="width:25.0%" data-top="200" data-left="0"></p>
 <p><img data-src="images/posito2.jpg" class="fragment" style="width:40.0%" data-top="50" data-right="50"></p>
-<p><img data-src="images/posit1.jpg" class="fragment" style="width:40.0%" data-bottom="0" data-right="50"></p>
+<p><img data-src="images/posit1.jpg" class="fragment" style="width:60.0%" data-bottom="0" data-right="50"></p>
 </div>
 </section>
-<section id="diseño-conceptual" class="slide level2">
-<h2>Diseño conceptual</h2>
-</section></section>
+<section id="antes-de-las-funciones-diseño-conceptual" class="slide level2">
+<h2>Antes de las funciones: diseño conceptual</h2>
+
+<img data-src="images/esquema3.png" class="r-stretch"></section>
+<section id="manos-a-la-obra" class="slide level2">
+<h2>Manos a la obra <span class="emoji" data-emoji="hammer_and_wrench">🛠️</span></h2>
+<div class="columns">
+<div class="column" style="width:15%;">
+<p><img data-src="images/python.png"> <br></p>
+<p><img data-src="images/R.png"></p>
+</div><div class="column" style="width:85%;">
+<ul>
+<li><p>webscraping para descarga de cuadros censales</p></li>
+<li><p>listar los archivos descargados extrayendo su información</p></li>
+<li><p>para la conversión de los cuadros de excel en formato tidy en Rbase</p></li>
+</ul>
+</div></div>
+</section>
+<section id="problemas-lluvia-de-excels-y-formatos-no-estandarizados" class="slide level2">
+<h2>Problemas: lluvia de excels y formatos no estandarizados</h2>
+<div class="r-stack">
+<p><img data-src="images/lluvia.png" class="fragment" style="width:60.0%" data-top="200" data-left="0"></p>
+<p><img data-src="images/cuadro2.png" class="fragment" style="width:80.0%" data-top="100" data-left="0"></p>
+<p><img data-src="images/cuadro.png" class="fragment" style="width:80.0%" data-top="50" data-right="50"></p>
+<p><img data-src="images/meme3.png" class="fragment" style="width:40.0%" data-top="50" data-right="50"></p>
+<p><img data-src="images/meme2.png" class="fragment" style="width:40.0%" data-top="50" data-right="50"></p>
+</div>
+</section>
+<section id="cómo-nos-organizamos" class="slide level2">
+<h2>¿Cómo nos organizamos?</h2>
+
+<img data-src="images/esquema2.png" class="r-stretch"></section>
+<section id="etapas-censales" class="slide level2">
+<h2>Etapas censales</h2>
+
+<img data-src="images/esquema1.png" class="r-stretch"></section>
+<section id="github-projects---status-del-proyecto" class="slide level2">
+<h2>Github projects - status del proyecto</h2>
+
+<img data-src="images/project.png" class="r-stretch"></section>
+<section id="issues-en-github-para-seguimiento" class="slide level2">
+<h2>issues en github para seguimiento</h2>
+
+<img data-src="images/issues.png" class="r-stretch"></section></section>
 <section>
 <section id="arcenso-1" class="title-slide slide level1 center">
 <h1>{arcenso} 📦</h1>
 
-</section>
-<section id="section" class="slide level2">
-<h2></h2>
-<p><br> <br> <br> <img data-src="images/arcenso.png" style="width:150.0%"></p>
 </section>
 <section id="cómo-funciona" class="slide level2">
 <h2>¿Cómo funciona?</h2>
@@ -652,7 +710,7 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
 <h1>Próximos pasos y metas 💫</h1>
 
 </section>
-<section id="section-1" class="slide level2">
+<section id="section" class="slide level2">
 <h2>👣</h2>
 <div>
 <div class="columns">
@@ -667,20 +725,37 @@ Andrea Gomez Vargas &amp; Emanuel Ciardullo
 </ul>
 </div></div>
 </div>
+</section></section>
+<section>
+<section id="lo-más-importante" class="title-slide slide level1 center">
+<h1>Lo más importante</h1>
+
 </section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+
+<img data-src="images/codehero.png" class="r-stretch"></section>
 <section id="gracias" class="slide level2">
 <h2>Gracias 😁</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="https://avatars.githubusercontent.com/u/45582182?v=4.png" style="border-radius: 80%;;width:50.0%"></p>
+<div class="column" style="width:33%;">
+<p><img data-src="https://avatars.githubusercontent.com/u/45582182?v=4.png" style="border-radius: 80%;;width:60.0%"></p>
 <p><strong>Andrea</strong></p>
 <p>rOpenSci Champion</p>
 <p>Socióloga</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="https://avatars.githubusercontent.com/u/64991969?v=4.png" style="border-radius: 80%;;width:50.0%"></p>
+</div><div class="column" style="width:33%;">
+<p><img data-src="https://avatars.githubusercontent.com/u/64991969?v=4.png" style="border-radius: 80%;;width:60.0%"></p>
 <p><strong>Emanuel</strong></p>
 <p>Estadístico</p>
+</div><div class="column" style="width:33%;">
+<p><img data-src="images/fito.jpg" style="border-radius: 80%;;width:60.0%"></p>
+<p><strong>Fito</strong></p>
+<p>Supervisor</p>
 </div></div>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p><br> <br> <br> <img data-src="images/arcenso.png" style="width:150.0%"></p>
 <div class="quarto-auto-generated-content">
 <p><img src="images/LatinR_hex_secundario.png" class="slide-logo"></p>
 <div class="footer footer-default">
