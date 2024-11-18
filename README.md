@@ -1,6 +1,7 @@
 # {ARcenso}: primeros pasos desarrollando un paquete en comunidad con rOpenSci 📦
 
 ## Charla LatinR2024 
+### Panel: Proceso de desarrollo de paquetes 
 
 Resumen: 
 
