@@ -13,5 +13,7 @@ En esta presentación nos proponemos compartir la experiencia de armar un paquet
 - [Emanuel Ciardullo](https://github.com/ECiardullo)
 
 ### Más link 
-- paquete https://soyandrea.github.io/arcenso/
+- web paquete https://soyandrea.github.io/arcenso/
+- repo paquete https://github.com/SoyAndrea/arcenso
 - slides https://soyandrea.github.io/arcenso-latinR2024/
+- rOpenSci Program https://ropensci.org/blog/2024/02/15/champions-program-champions-2024/#andrea-gomez-vargas 
